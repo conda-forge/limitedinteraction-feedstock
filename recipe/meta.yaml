@@ -1,5 +1,5 @@
 {% set name = "limitedinteraction" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/limitedinteraction-{{ version }}.tar.gz
-  sha256: 0ee29c5362d732c57b9c1baa7af1547601db5a1731a9206e804de68cd7de6e70
+  sha256: 12d4320eddb9bfcda258269107efe360f8603bdac0a95ad4596da50ab8e8f71e
 
 build:
   number: 0
@@ -35,7 +35,7 @@ about:
   summary: Provides simple, backend-independant GUI tools for simple user interaction.
   dev_url: https://github.com/felixchenier/limitedinteraction/
   license: Apache-2.0
-  license_file: LICENSE
+  license_file: LICENSE.txt
 
 extra:
   recipe-maintainers:
