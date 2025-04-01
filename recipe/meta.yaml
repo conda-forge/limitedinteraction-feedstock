@@ -8,19 +8,19 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/limitedinteraction-{{ version }}.tar.gz
-  sha256: ddf05701e3d7bafdb9fc7b742ab2aa9fa092fd6c760898a09d0b2564e5f6524c
+  sha256: 12d4320eddb9bfcda258269107efe360f8603bdac0a95ad4596da50ab8e8f71e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -29,6 +29,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/felixchenier/limitedinteraction
