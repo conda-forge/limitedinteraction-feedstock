@@ -1,5 +1,5 @@
 {% set name = "limitedinteraction" %}
-{% set version = "0.2.2" %}
+{% set version = "1.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/limitedinteraction-{{ version }}.tar.gz
-  sha256: 12d4320eddb9bfcda258269107efe360f8603bdac0a95ad4596da50ab8e8f71e
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/limitedinteraction-{{ version }}.tar.gz
+  sha256: ddf05701e3d7bafdb9fc7b742ab2aa9fa092fd6c760898a09d0b2564e5f6524c
 
 build:
   number: 0
